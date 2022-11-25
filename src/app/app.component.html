@@ -2,20 +2,14 @@
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>::</span>
+  <span>Estoque</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+  <button  mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" (click)="categoria()"><mat-icon>list</mat-icon> </button>
+  <button  mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" (click)="produtos()"><mat-icon>shopping_cart</mat-icon></button>
 </mat-toolbar>
 
-<div class="fundo">
-  <button (click)="categoria()">Categoria </button>
-  <button (click)="produtos()">Produtos</button>
-</div>
+
+
 
 <app-ctg *ngIf="catego"></app-ctg>
 <app-pdt *ngIf="produto"></app-pdt>
