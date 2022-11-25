@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Produto } from 'src/app/core/model';
 
 @Component({
   selector: 'app-pdt',
@@ -8,15 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class PdtComponent implements OnInit {
 
   Produtos: Produto[] = [
-    {id: 1, categoria: 'Sorvete'},
-    {id: 2, categoria: 'Leite'},
-    {id: 3, categoria: 'Picanha'},
-    {id: 4, categoria: 'Fita adesiva'},
-    {id: 5, categoria: 'Alvejante'}
+    {id: 1, produto: 'Sorvete'},
+    {id: 2, produto: 'Leite'},
+    {id: 3, produto: 'Picanha'},
+    {id: 4, produto: 'Fita adesiva'},
+    {id: 5, produto: 'Alvejante'}
 
 
-
-  ]
+  ];
+  displayedColumns: string[] = ['id', 'produto'];
 
   constructor() { }
 

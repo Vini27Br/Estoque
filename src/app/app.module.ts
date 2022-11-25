@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoriaModule } from "./categoria/categoria.module";
+import { ProdutoModule } from './produto/produto.module';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,10 @@ import { CategoriaModule } from "./categoria/categoria.module";
         AppRoutingModule,
         BrowserAnimationsModule,
         CoreModule,
+
         CategoriaModule,
+        ProdutoModule,
+
         MatToolbarModule,
         MatIconModule,
         MatButtonModule
